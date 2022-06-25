@@ -44,8 +44,24 @@
 
 .right {
   width: 35%;
+  height: 100vh;
 }
 
 .left {
   width: 65%;
+  height: 100vh;
+}
+
+.media-block {
+
+  height: 100%;
+  background-color: silver;
+
+}
+
+.image {
+  flex: 1;
+  max-width: '100%';
+  max-height: '100%';
+  resize: 'contain';
 }
