@@ -1,5 +1,5 @@
 import React from "react";
-import 'App.css'
+import 'App.css';
 import myImage from "photos/car-personal.JPG";
 
 const Media = () => {
@@ -7,11 +7,10 @@ const Media = () => {
 
     return (
 
-        <div className="row media-block">
-
-            <figure>
+        <div className="media-block">
+            <figure className="figure">
                 <img src={myImage} alt="Image" className="image"></img>
-                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                {/* <figcaption>For now just a cool picture, but soon to be a sick photo gallery.</figcaption> */}
             </figure>
         </div>
 
