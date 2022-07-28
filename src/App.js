@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route }
 import Home from './pages';
 import About from './pages/about';
 import Media from './components/media';
+import InfoSide from 'components/InfoSide';
 
 function App() {
   return (
@@ -14,11 +15,12 @@ function App() {
       <div className="App">
         <div className="row">
           <div className="column left">
-          <Navbar />
+          {/* <Navbar />
             <Routes>
               <Route exact path='/' element={<Home />} />
               <Route path='/about' element={<About />} />
-            </Routes>
+            </Routes> */}
+            <InfoSide />
           </div>
           <div className="column right">
             {/* <Navbar /> */}
