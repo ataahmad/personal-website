@@ -21,6 +21,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "imports": {
+    "#root/*": "./*",
+    "#photos/*": "./src/photos/*"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
