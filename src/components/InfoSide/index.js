@@ -37,7 +37,7 @@ const Bio = () => {
 const InfoSide = () => {
 
     return (
-        <div>
+        <div className="">
             <BioHeader />
             <Bio />
         </div>
