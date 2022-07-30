@@ -1,33 +1,28 @@
 import React from "react";
 import "./#root/App.css";
-
-import image1 from "#photos/car-personal.JPG";
-import image2 from "#photos/court-personal.JPG";
-import image3 from "#photos/littleItaly-personal.JPG";
-import image4 from "#photos/moon-personal.JPG";
-import image5 from "#photos/sunset-exp-personal.JPG";
+const cdnBase = "https://d1vyza13emfewt.cloudfront.net";
 
 
 const images = [
     {
         caption: "Chasing Sunsets",
-        imgPath: image1
+        imgPath: cdnBase + "/car-personal.JPG"
     },
     {
         caption: "Net",
-        imgPath: image2
+        imgPath: cdnBase + "/court-personal.JPG"
     },
     {
         caption: "That's Amore",
-        imgPath: image3
+        imgPath: cdnBase + "/littleItaly-personal.JPG"
     },
     {
         caption: "And It Went Like",
-        imgPath: image4
+        imgPath: cdnBase + "/moon-personal.JPG"
     },
     {
         caption: "Death Star",
-        imgPath: image5
+        imgPath: cdnBase + "/sunset-exp-personal.JPG"
     },
 ];
 
