@@ -1,12 +1,12 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
+import 'App.css';
 // import Navbar from './components/Navbar';
 // import { BrowserRouter as Router, Routes, Route }
 //   from 'react-router-dom';
 // import Home from './pages';
 // import About from './pages/about';
-import Media from './components/media';
+import Media from 'components/media';
 import InfoSide from 'components/InfoSide';
 
 function App() {

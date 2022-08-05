@@ -1,5 +1,5 @@
 import React from "react";
-import "./#root/App.css";
+import "App.css";
 const cdnBase = "https://d1vyza13emfewt.cloudfront.net";
 
 
