@@ -12,4 +12,3 @@ test('Renders the intro', () => {
   const desc = screen.getByText(/My name is Ata/i);
   expect(desc).toBeInTheDocument();
 });
-
