@@ -12,9 +12,3 @@ test('Renders the intro', () => {
   const desc = screen.getByText(/My name is Ata/i);
   expect(desc).toBeInTheDocument();
 });
-
-test('Renders the image caption', () => {
-  render(<App />);
-  const cap = screen.getByText(/Check out my shots/i);
-  expect(cap).toBeInTheDocument();
-});
