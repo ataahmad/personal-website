@@ -1,17 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route }
-  from 'react-router-dom';
-import Home from './pages';
-import About from './pages/about';
-import Media from './components/media';
+// import logo from './logo.svg';
+import 'App.css';
+// import Navbar from './components/Navbar';
+// import { BrowserRouter as Router, Routes, Route }
+//   from 'react-router-dom';
+// import Home from './pages';
+// import About from './pages/about';
+import Media from 'components/media';
 import InfoSide from 'components/InfoSide';
 
 function App() {
   return (
-    <Router>
+    // <Router>
       <div className="App">
         <div className="row">
           <div className="column left">
@@ -24,13 +24,13 @@ function App() {
           </div>
           <div className="column right">
             {/* <Navbar /> */}
-            <div className="top-right">
-            </div>
+            {/* <div className="top-right">
+            </div> */}
             <Media />
           </div>
         </div>
       </div>
-    </Router>
+    // </Router>
   );
 }
 

@@ -1,13 +1,15 @@
 import React from "react";
-import "./#root/App.css";
+import "App.css";
 
 
 
 const BioHeader = () => {
     return (
-        <h1>
-            Welcome to my personal site!
-        </h1>
+        <div className="welBanner">
+            <h1>
+                Welcome to my personal site!
+            </h1>
+        </div>
     );
 }
 
@@ -37,7 +39,7 @@ const Bio = () => {
 const InfoSide = () => {
 
     return (
-        <div className="">
+        <div className="left-content">
             <BioHeader />
             <Bio />
         </div>

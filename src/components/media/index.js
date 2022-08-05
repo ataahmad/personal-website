@@ -1,5 +1,5 @@
 import React from "react";
-import "./#root/App.css";
+import "App.css";
 const cdnBase = "https://d1vyza13emfewt.cloudfront.net";
 
 
@@ -33,17 +33,24 @@ const Media = () => {
     return (
 
         <div className="media-block">
-            <div>
+            <div className="row">
                 <figure className="figure">
                     <img src={images[index].imgPath} alt="Image" className="image"></img>
-                    <figcaption>{images[index].caption}</figcaption>
                 </figure>
-                <button
-                    className="toggle"
-                    onClick={() => {
-                        setImg((index + 1) % images.length);
-                    }}
-                >Check out my shots.</button>
+            </div>
+            <div className="row">
+                <div className="row caption">
+                    <figcaption>{images[index].caption}</figcaption>
+                </div>
+                <div className="row browse">
+                    <button
+                        className="toggle"
+                        onClick={() => {
+                            setImg((index + 1) % images.length);
+                        }}
+                    >Check out my shots.
+                    </button>
+                </div>
             </div>
         </div>
 
