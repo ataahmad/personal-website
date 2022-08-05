@@ -9,7 +9,12 @@ test('Renders the Title', () => {
 
 test('Renders the intro', () => {
   render(<App />);
-  const desc = screen.getByText(/My name is not Ata/i);
+  const desc = screen.getByText(/My name is Ata/i);
   expect(desc).toBeInTheDocument();
 });
 
+test('Renders the image caption', () => {
+  render(<App />);
+  const cap = screen.getByText(/Check out my shots/i);
+  expect(cap).toBeInTheDocument();
+});
