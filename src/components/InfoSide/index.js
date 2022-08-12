@@ -6,7 +6,7 @@ import "App.css";
 const BioHeader = () => {
     return (
         <div className="welBanner">
-            <h1>
+            <h1 className="brand-name">
                 Welcome to my personal site!
             </h1>
         </div>
@@ -17,20 +17,22 @@ const BioHeader = () => {
 const Bio = () => {
 
     return (
-        <ul>
-            <li>
-                My name is Ata.
-            </li>
-            <li>
-                I'm a Software Engineer, Photographer and Volleyball Player.
-            </li>
-            <li>
-                This is my personal site.
-            </li>
-            <li>
-                Scope some of my work on the right.
-            </li>
-        </ul>
+        <div className="bulletList">
+            <ul>
+                <li>
+                    My name is Ata.
+                </li>
+                <li>
+                    I'm a Software Engineer, Photographer and Volleyball Player.
+                </li>
+                <li>
+                    This is my personal site.
+                </li>
+                <li>
+                    Scope some of my work on the right.
+                </li>
+            </ul>
+        </div>
     )
 
 };

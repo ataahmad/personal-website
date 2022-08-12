@@ -35,7 +35,7 @@ const Media = () => {
         <div className="media-block">
             <div className="row">
                 <figure className="figure">
-                    <img src={images[index].imgPath} alt="Image" className="image"></img>
+                    <img src={images[index].imgPath} alt="Email me for bookings!" className="image"></img>
                 </figure>
             </div>
             <div className="row">
