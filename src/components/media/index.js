@@ -27,6 +27,24 @@ const images = [
 ];
 
 
+const Gallery = () => {
+
+    const [index, setImg] = React.useState(0);
+    return (
+
+        <div className="row">
+            <img src={images[index].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
+            <img src={images[(index + 1) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
+            <img src={images[(index + 2) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
+            <img src={images[(index + 3) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
+            <img src={images[(index + 4) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
+        </div>
+
+    );
+
+};
+
+
 const Media = () => {
 
     const [index, setImg] = React.useState(0);
@@ -38,6 +56,7 @@ const Media = () => {
                     <img src={images[index].imgPath} alt="Email me for bookings!" className="image"></img>
                 </figure>
             </div>
+            <Gallery/>
             <div className="row">
                 <div className="row caption">
                     <figcaption>{images[index].caption}</figcaption>
