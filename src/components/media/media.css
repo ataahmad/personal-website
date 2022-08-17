@@ -1,0 +1,68 @@
+.media-block {
+    max-width: 100%;
+    max-height: 40%;
+    margin-top: 20%;
+    /* background-color: silver; */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.figure {
+    display: flex;
+    justify-content: center;
+    /* overflow: auto; */
+}
+
+
+
+.caption {
+    margin: 2%;
+    justify-content: center;
+    text-align: center;
+}
+
+.browse {
+    margin: 2%;
+    justify-content: center;
+    display: flex;
+
+}
+
+
+
+
+.gallery {
+    justify-content: center;
+    resize: auto;
+}
+
+
+img.thumbnail {
+    /*border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;
+    /* Rounded border */
+    padding: 5px;
+    /* Some padding */
+    width: 16%;
+    /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(221, 227, 230, 0.5);
+}
+
+.toggle {
+    vertical-align: center;
+    justify-self: center;
+    height: 1000%;
+    width: 25px;
+    opacity: 0.9;
+}
