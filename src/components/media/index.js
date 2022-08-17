@@ -1,5 +1,6 @@
 import React from "react";
-import "App.css";
+// import "App.css";
+import "./media.css";
 const cdnBase = "https://d1vyza13emfewt.cloudfront.net";
 
 
@@ -27,22 +28,6 @@ const images = [
 ];
 
 
-const Gallery = () => {
-
-    const [index, setImg] = React.useState(0);
-    return (
-
-        <div className="row">
-            <img src={images[index].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
-            <img src={images[(index + 1) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
-            <img src={images[(index + 2) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
-            <img src={images[(index + 3) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
-            <img src={images[(index + 4) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
-        </div>
-
-    );
-
-};
 
 
 const Media = () => {
@@ -56,18 +41,25 @@ const Media = () => {
                     <img src={images[index].imgPath} alt="Email me for bookings!" className="image"></img>
                 </figure>
             </div>
-            <Gallery/>
             <div className="row">
                 <div className="row caption">
                     <figcaption>{images[index].caption}</figcaption>
                 </div>
-                <div className="row browse">
+                <div className="row gallery">
+                    <button>
+                        left
+                    </button>
+                    <img src={images[index].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
+                    <img src={images[(index + 1) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
+                    <img src={images[(index + 2) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
+                    <img src={images[(index + 3) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
+                    <img src={images[(index + 4) % images.length].imgPath} alt="Email me for bookings!" className="thumbnail"></img>
                     <button
                         className="toggle"
                         onClick={() => {
                             setImg((index + 1) % images.length);
                         }}
-                    >Check out my shots.
+                    > &gt;
                     </button>
                 </div>
             </div>
