@@ -49,3 +49,7 @@ li {
     font-weight: 100;
     line-height: 1;
 }
+
+a {
+    color: rgb(80, 166, 231);
+}
