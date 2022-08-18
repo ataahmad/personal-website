@@ -34,6 +34,11 @@ const Bio = () => {
                 <li>
                     Scope some of my work on the right.
                 </li>
+                <li>
+                    Here is my &nbsp;
+                    <a href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    &nbsp; in case you're into professional stuff.
+                </li>
             </ul>
         </div>
     )
