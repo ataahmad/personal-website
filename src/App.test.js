@@ -1,14 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import InfoSide from 'components/InfoSide';
 
-test('Renders the Title', () => {
-  render(<App />);
-  const title = screen.getByText(/Welcome to my personal site!/i);
-  expect(title).toBeInTheDocument();
-});
-
-test('Renders the intro', () => {
-  render(<App />);
+test('Renders the Description', () => {
+  render(<InfoSide />);
   const desc = screen.getByText(/My name is Ata/i);
   expect(desc).toBeInTheDocument();
 });
