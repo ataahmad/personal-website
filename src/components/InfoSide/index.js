@@ -7,8 +7,11 @@ const BioHeader = () => {
     return (
         <div className="welBanner">
             <h1 className="brand-name">
-                Welcome to my personal site!
+                Ata Ahmad
             </h1>
+            <span className="titles">
+                Software Engineer &nbsp; &bull; &nbsp; Photographer &nbsp; &bull; &nbsp; Volleyball Player
+            </span>
         </div>
     );
 }
