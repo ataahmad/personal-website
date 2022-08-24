@@ -72,14 +72,23 @@ const InfoSide = () => {
         setTab("Links");
     }
 
-    let tabInfo = (tab === "Bio") ? <Bio /> : <Links/>
+    let tabInfo = () => {
+        switch (tab) {
+            case "Bio":
+                return <Bio />;
+            case "Links":
+                return <Links />;
+            default:
+                return <Bio />;
+        }
+    }
 
     return (
         <div className="left-content">
             <BioHeader />
             <button onClick={handleBioClick}> Bio</button>
             <button onClick={handleLinkClick}> Links</button>
-            {tabInfo}
+            {tabInfo()}
         </div>
     );
 
