@@ -3,6 +3,6 @@ import InfoSide from 'components/InfoSide';
 
 test('Renders the Description', () => {
   render(<InfoSide />);
-  const desc = screen.getByText(/My name is Ata/i);
+  const desc = screen.getByText(/Photographer/i);
   expect(desc).toBeInTheDocument();
 });
