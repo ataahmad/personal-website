@@ -39,8 +39,12 @@
 
 
 .gallery {
-    justify-content: center;
     resize: auto;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 
@@ -64,9 +68,23 @@ img:hover {
 }
 
 .toggle {
-    vertical-align: center;
+    /* vertical-align: center; */
     justify-self: center;
-    height: 1000%;
-    width: 25px;
-    opacity: 0.9;
+    /* height: 1000%; */
+    /* width: 25px; */
+    /* opacity: 0.1; */
+    /* text-decoration-color: aliceblue; */
+    color: white;
+    background-color: #2c343b;
+    margin: 5px;
+    border: 1px;
 }
+
+.fade {
+    max-height: 100%;
+    opacity: 1000;
+    position: relative;
+    offset: 10px;
+}
+
+

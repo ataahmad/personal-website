@@ -46,8 +46,8 @@ const Media = () => {
                     <figcaption>{images[index].caption}</figcaption>
                 </div>
                 <div className="row gallery">
-                    <button>
-                        left
+                    <button className="toggle">
+                        &lt;
                     </button>
                     <img src={images[0].imgPath} alt="Email me for bookings!" className={`thumbnail ${(index === 0 ? "selected" : "")}`}></img>
                     <img src={images[1].imgPath} alt="Email me for bookings!" className={`thumbnail ${(index === 1 ? "selected" : "")}`}></img>
@@ -59,7 +59,8 @@ const Media = () => {
                         onClick={() => {
                             setImg((index + 1) % images.length);
                         }}
-                    > &gt;
+                    >
+                        <span className="arrow">&gt;</span>
                     </button>
                 </div>
             </div>
