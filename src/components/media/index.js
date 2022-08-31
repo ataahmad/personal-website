@@ -1,5 +1,4 @@
 import React from "react";
-// import "App.css";
 import "./media.css";
 const cdnBase = "https://d1vyza13emfewt.cloudfront.net";
 
@@ -32,7 +31,24 @@ const images = [
 
 const Media = () => {
 
-    const [index, setImg] = React.useState(0);
+    const [index, setInd] = React.useState(0);
+
+    const handleRightClick = () => {
+        const newInd = (index + 1) % images.length;
+        setInd(newInd);
+    };
+
+    const handleLeftClick = () => {
+        const newInd = index ? index - 1 : images.length - 1;
+        setInd(newInd);
+    };
+
+    const handleImageClick = input => () => {
+        const newInd = input;
+        setInd(newInd);
+    }
+
+
     return (
 
         <div className="media-block">
@@ -46,20 +62,15 @@ const Media = () => {
                     <figcaption>{images[index].caption}</figcaption>
                 </div>
                 <div className="row gallery">
-                    <button className="toggle">
-                        &lt;
+                    <button className="toggle" onClick={handleLeftClick}>
+                        <span>&lt;</span>
                     </button>
-                    <img src={images[0].imgPath} alt="Email me for bookings!" className={`thumbnail ${(index === 0 ? "selected" : "")}`}></img>
-                    <img src={images[1].imgPath} alt="Email me for bookings!" className={`thumbnail ${(index === 1 ? "selected" : "")}`}></img>
-                    <img src={images[2].imgPath} alt="Email me for bookings!" className={`thumbnail ${(index === 2 ? "selected" : "")}`}></img>
-                    <img src={images[3].imgPath} alt="Email me for bookings!" className={`thumbnail ${(index === 3 ? "selected" : "")}`}></img>
-                    <img src={images[4].imgPath} alt="Email me for bookings!" className={`thumbnail ${(index === 4 ? "selected" : "")}`}></img>
-                    <button
-                        className="toggle"
-                        onClick={() => {
-                            setImg((index + 1) % images.length);
-                        }}
-                    >
+                    <img src={images[0].imgPath} onClick={handleImageClick(0)} alt="Email me for bookings!" className={`thumbnail${(index === 0 ? " selected" : "")}`}></img>
+                    <img src={images[1].imgPath} onClick={handleImageClick(1)} alt="Email me for bookings!" className={`thumbnail${(index === 1 ? " selected" : "")}`}></img>
+                    <img src={images[2].imgPath} onClick={handleImageClick(2)} alt="Email me for bookings!" className={`thumbnail${(index === 2 ? " selected" : "")}`}></img>
+                    <img src={images[3].imgPath} onClick={handleImageClick(3)} alt="Email me for bookings!" className={`thumbnail${(index === 3 ? " selected" : "")}`}></img>
+                    <img src={images[4].imgPath} onClick={handleImageClick(4)} alt="Email me for bookings!" className={`thumbnail${(index === 4 ? " selected" : "")}`}></img>
+                    <button className="toggle" onClick={handleRightClick}>
                         <span className="arrow">&gt;</span>
                     </button>
                 </div>
