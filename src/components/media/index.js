@@ -52,6 +52,7 @@ const Media = () => {
     return (
 
         <div className="media-block">
+            <h3 className="caption">Here is my life outside of coding</h3>
             <div className="row">
                 <figure className="figure">
                     <img src={images[index].imgPath} alt="Email me for bookings!" className="main-image"></img>
