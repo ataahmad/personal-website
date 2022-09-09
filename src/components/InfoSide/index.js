@@ -25,16 +25,25 @@ const Bio = () => {
         <div className="bulletList">
             <ul>
                 <li>
-                    Graduated from UCSB in 2020
+                    I went to UCSB and studied Physics.
                 </li>
                 <li>
-                    Got my first job at Honey (now PayPal)
+                    I picked up programming in order to complete my Physics labs.
                 </li>
                 <li>
-                    Picked up a camera sometime last year.
+                    After a lot of data analysis using Python, I found my new passion.
                 </li>
                 <li>
-                    Have not stopped since as you can tell &rarr;
+                    I knew I wanted to spend my career building cool things with this talent.
+                </li>
+                <li>
+                    I picked up Javascript within a week to code in interviews at PayPal.
+                </li>
+                <li>
+                    Those interviews went well and I started after graduation in March 2020.
+                </li>
+                <li>
+                    Have not stopped since as you can tell.
                 </li>
             </ul>
         </div>
@@ -45,12 +54,15 @@ const Bio = () => {
 const Links = () => {
 
     return (
-        <div>
+        <div className="bulletList">
             <ul>
                 <li>
                     Here is my &nbsp;
                     <a href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">LinkedIn</a>
                     &nbsp; in case you're into professional stuff.
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">Here is where you can find all of my code.</a>
                 </li>
             </ul>
         </div>
@@ -86,8 +98,10 @@ const InfoSide = () => {
     return (
         <div className="left-content">
             <BioHeader />
-            <button onClick={handleBioClick}> Bio</button>
-            <button onClick={handleLinkClick}> Links</button>
+            <div className="tabHolder">
+                <button className="tab" onClick={handleBioClick}>Bio</button>
+                <button className="tab" onClick={handleLinkClick}>|&nbsp;&nbsp;Links</button>
+            </div>
             {tabInfo()}
         </div>
     );
