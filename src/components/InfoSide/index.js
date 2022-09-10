@@ -57,9 +57,7 @@ const Links = () => {
         <div className="bulletList">
             <ul>
                 <li>
-                    Here is my &nbsp;
-                    <a href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">LinkedIn</a>
-                    &nbsp; in case you're into professional stuff.
+                    <a href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">Here is my LinkedIn in case you're into professional stuff.</a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">Here is where you can find all of my code.</a>
