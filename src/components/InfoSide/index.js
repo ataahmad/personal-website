@@ -60,7 +60,7 @@ const Links = () => {
                     <a href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">Here is my LinkedIn in case you're into professional stuff.</a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">Here is where you can find all of my code.</a>
+                    <a href="https://github.com/ataahmad" target="_blank" rel="noreferrer">Here is where you can find all of my code.</a>
                 </li>
             </ul>
         </div>
