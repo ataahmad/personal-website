@@ -97,8 +97,9 @@ const InfoSide = () => {
         <div className="left-content">
             <BioHeader />
             <div className="tabHolder">
-                <button className="tab" onClick={handleBioClick}>Bio</button>
-                <button className="tab" onClick={handleLinkClick}>|&nbsp;&nbsp;Links</button>
+                <button className="tab" onClick={handleBioClick}>About Me</button>
+                <span className="tab">&nbsp;|&nbsp;</span>
+                <button className="tab" onClick={handleLinkClick}>Links</button>
             </div>
             {tabInfo()}
         </div>
