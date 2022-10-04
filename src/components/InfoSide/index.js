@@ -57,7 +57,7 @@ const Links = () => {
         <div className="bulletList">
             <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">Here is my LinkedIn in case you're into professional stuff.</a>
+                    <a data-testid="linkedIn" href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">Here is my LinkedIn in case you're into professional stuff.</a>
                 </li>
                 <li>
                     <a href="https://github.com/ataahmad" target="_blank" rel="noreferrer">Here is where you can find all of my code.</a>
@@ -97,8 +97,9 @@ const InfoSide = () => {
         <div className="left-content">
             <BioHeader />
             <div className="tabHolder">
-                <button className="tab" onClick={handleBioClick}>Bio</button>
-                <button className="tab" onClick={handleLinkClick}>|&nbsp;&nbsp;Links</button>
+                <button className="tab" onClick={handleBioClick}>About Me</button>
+                <span className="tab">&nbsp;|&nbsp;</span>
+                <button className="tab" data-testid="linkButton" onClick={handleLinkClick}>Links</button>
             </div>
             {tabInfo()}
         </div>

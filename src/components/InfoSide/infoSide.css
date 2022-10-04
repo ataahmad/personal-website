@@ -73,3 +73,7 @@ a {
 .tabHolder {
     text-align: center;
 }
+
+button.tab:hover {
+    color: grey;
+}
