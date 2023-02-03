@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
-// import "App.css";
 import "./infoSide.css";
 
 
@@ -12,7 +9,7 @@ const BioHeader = () => {
                 Ata Ahmad
             </h1>
             <span className="titles">
-                Software Engineer &nbsp; &bull; &nbsp; Photographer &nbsp; &bull; &nbsp; Volleyball Player
+                Software Engineer &nbsp; &bull; &nbsp; Photographer &nbsp; &bull; &nbsp; CBVA Volleyball Player
             </span>
         </div>
     );
@@ -25,25 +22,31 @@ const Bio = () => {
         <div className="bulletList">
             <ul>
                 <li>
-                    I went to UCSB and studied Physics.
+                    I did my undergraduate studies in Physics at UCSB.
                 </li>
                 <li>
-                    I picked up programming in order to complete my Physics labs.
+                    I first got into coding by using Python in my labs.
                 </li>
                 <li>
-                    After a lot of data analysis using Python, I found my new passion.
+                    I quickly realized how much I loved creating cool things with software.
                 </li>
                 <li>
-                    I knew I wanted to spend my career building cool things with this talent.
+                    I picked up Javascript within a week for in an interview I got at PayPal.
                 </li>
                 <li>
-                    I picked up Javascript within a week to code in interviews at PayPal.
+                    The interviews went well and I started after graduation in March 2020.
                 </li>
                 <li>
-                    Those interviews went well and I started after graduation in March 2020.
+                    I developed invaluable skills and even earned a promotion into an SDET position.
                 </li>
                 <li>
-                    Have not stopped since as you can tell.
+                    However, my journey hit a road bump when I and 80% of my team were laid off.
+                </li>
+                <li>
+                    I've overcome many obstacles, so I'm determined to do the same with this one.
+                </li>
+                <li>
+                    See my links if you are interested in helping me find my next step!
                 </li>
             </ul>
         </div>
@@ -57,10 +60,13 @@ const Links = () => {
         <div className="bulletList">
             <ul>
                 <li>
-                    <a data-testid="linkedIn" href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">Here is my LinkedIn in case you're into professional stuff.</a>
+                    <a data-testid="linkedIn" href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">Here is where you can find my Linkedin.</a>
                 </li>
                 <li>
                     <a href="https://github.com/ataahmad" target="_blank" rel="noreferrer">Here is where you can find all of my code.</a>
+                </li>
+                <li>
+                    <a href="https://atasvisualizer.com" target="_blank" rel="noreferrer">Here is where you can find my most recent project.</a>
                 </li>
             </ul>
         </div>
@@ -97,9 +103,9 @@ const InfoSide = () => {
         <div className="left-content">
             <BioHeader />
             <div className="tabHolder">
-                <button className="tab" onClick={handleBioClick}>About Me</button>
+                <button className={((tab === "Bio") ? "selected-tab" : "tab")} onClick={handleBioClick}>About Me</button>
                 <span className="tab">&nbsp;|&nbsp;</span>
-                <button className="tab" data-testid="linkButton" onClick={handleLinkClick}>Links</button>
+                <button className={((tab === "Links") ? "selected-tab" : "tab")} data-testid="linkButton" onClick={handleLinkClick}>Links</button>
             </div>
             {tabInfo()}
         </div>
