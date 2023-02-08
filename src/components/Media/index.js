@@ -45,11 +45,11 @@ const Media = props => {
                     <button className="toggle" onClick={handleLeftClick}>
                         <span>&lt;</span>
                     </button>
-                    <img src={IMAGES[0].imgPath} onClick={handleImageClick(0)} alt="Email me for bookings!" className={`thumbnail${(index === 0 ? " selected" : "")}`} />
-                    <img src={IMAGES[1].imgPath} onClick={handleImageClick(1)} alt="Email me for bookings!" className={`thumbnail${(index === 1 ? " selected" : "")}`} />
-                    <img src={IMAGES[2].imgPath} onClick={handleImageClick(2)} alt="Email me for bookings!" className={`thumbnail${(index === 2 ? " selected" : "")}`} />
-                    <img src={IMAGES[3].imgPath} onClick={handleImageClick(3)} alt="Email me for bookings!" className={`thumbnail${(index === 3 ? " selected" : "")}`} />
-                    <img src={IMAGES[4].imgPath} onClick={handleImageClick(4)} alt="Email me for bookings!" className={`thumbnail${(index === 4 ? " selected" : "")}`} />
+                    <FadeImage src={IMAGES[0].imgPath} useClick={handleImageClick(0)} alt="Email me for bookings!" imgClass={`thumbnail${(index === 0 ? " selected" : "")}`} />
+                    <FadeImage src={IMAGES[1].imgPath} useClick={handleImageClick(1)} alt="Email me for bookings!" imgClass={`thumbnail${(index === 1 ? " selected" : "")}`} />
+                    <FadeImage src={IMAGES[2].imgPath} useClick={handleImageClick(2)} alt="Email me for bookings!" imgClass={`thumbnail${(index === 2 ? " selected" : "")}`} />
+                    <FadeImage src={IMAGES[3].imgPath} useClick={handleImageClick(3)} alt="Email me for bookings!" imgClass={`thumbnail${(index === 3 ? " selected" : "")}`} />
+                    <FadeImage src={IMAGES[4].imgPath} useClick={handleImageClick(4)} alt="Email me for bookings!" imgClass={`thumbnail${(index === 4 ? " selected" : "")}`} />
                     <button className="toggle" onClick={handleRightClick}>
                         <span className="arrow">&gt;</span>
                     </button>
