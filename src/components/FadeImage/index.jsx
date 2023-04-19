@@ -1,8 +1,7 @@
-import { React, useCallback, useState } from 'react';
+import { React, useState } from 'react';
 
 const FadeImage = ({ src, alt, imgClass, useClick }) => {
   const [loaded, setLoaded] = useState(false);
-  const memoizedHandleClick = useCallback(() => {}, []);
 
   return (
     <img

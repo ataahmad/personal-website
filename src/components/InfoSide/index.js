@@ -40,13 +40,17 @@ const Bio = () => {
                     I developed invaluable skills and even earned a promotion into an SDET position.
                 </li>
                 <li>
-                    However, my journey hit a road bump when I and 80% of my team were laid off.
+                    My journey hit a road bump when I and 80% of my team were laid off.
                 </li>
                 <li>
-                    I've overcome many obstacles, so I'm determined to do the same with this one.
+                    Fortunately, resilience and an amazing network only made that a road bump.
                 </li>
                 <li>
-                    See my links if you are interested in helping me find my next step!
+                    I am now a Software Development Engineer in Test at&nbsp;
+                    <a href="https://www.platformscience.com/" target="_blank" rel="noreferrer">
+                        Platform Science
+                    </a>
+                    !
                 </li>
             </ul>
         </div>
