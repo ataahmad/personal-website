@@ -1,6 +1,6 @@
 import { React } from 'react';
 import 'App.css';
-import Media from 'components/media';
+import Media from 'components/Media';
 import InfoSide from 'components/InfoSide';
 
 function App() {
