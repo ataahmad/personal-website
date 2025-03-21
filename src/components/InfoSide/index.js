@@ -25,19 +25,16 @@ const Bio = () => {
                     I did my undergraduate studies in Physics at UCSB.
                 </li>
                 <li>
-                    I first got into coding by using Python in my labs.
+                    I picked up Python for my labs, but found a love for coding along the way.
                 </li>
                 <li>
-                    I quickly realized how much I loved creating cool things with software.
-                </li>
-                <li>
-                    I picked up Javascript within a week for in an interview I got at PayPal.
+                    I picked up Javascript within two weeks for an interview I got at PayPal.
                 </li>
                 <li>
                     The interviews went well and I started after graduation in March 2020.
                 </li>
                 <li>
-                    I developed invaluable skills and even earned a promotion into an SDET position.
+                    I developed invaluable skills and even earned a promotion to an SDET role!
                 </li>
                 <li>
                     My journey hit a road bump when I and 80% of my team were laid off.
@@ -46,11 +43,17 @@ const Bio = () => {
                     Fortunately, resilience and an amazing network only made that a road bump.
                 </li>
                 <li>
-                    I am now a Software Development Engineer in Test at&nbsp;
-                    <a href="https://www.platformscience.com/" target="_blank" rel="noreferrer">
-                        Platform Science
+                    I landed an amazing role as an SDET over at&nbsp;
+                    <a href="https://www.platformscience.com/" target="_blank" rel="noreferrer" className="externalLink">
+                      Platform Science
                     </a>
                     !
+                </li>
+                <li>
+                    I accomplished a lot in my time there, and I am now a Site Reliability Engineer.
+                </li>
+                <li>
+                    I now spend my time loving the art of building large-scale distributed systems!
                 </li>
             </ul>
         </div>
@@ -64,13 +67,10 @@ const Links = () => {
         <div className="bulletList">
             <ul>
                 <li>
-                    <a data-testid="linkedIn" href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer">Here is where you can find my Linkedin.</a>
+                    <a data-testid="linkedIn" href="https://www.linkedin.com/in/ataahmad9/" target="_blank" rel="noreferrer" className="externalLink">Here is where you can find my Linkedin.</a>
                 </li>
                 <li>
-                    <a href="https://github.com/ataahmad" target="_blank" rel="noreferrer">Here is where you can find all of my code.</a>
-                </li>
-                <li>
-                    <a href="https://atasvisualizer.com" target="_blank" rel="noreferrer">Here is where you can find my most recent project.</a>
+                    <a href="https://github.com/ataahmad" target="_blank" rel="noreferrer" className="externalLink">Here is where you can find my code.</a>
                 </li>
             </ul>
         </div>
