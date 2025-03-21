@@ -86,3 +86,7 @@ a:hover {
 button.tab:hover {
     color: grey;
 }
+
+.externalLink {
+    color: rgb(0, 136, 255)
+}
